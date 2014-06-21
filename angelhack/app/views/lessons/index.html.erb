@@ -1,1 +1,17 @@
-index.html.erb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lessons</title>
+</head>
+<body>
+  <% @lessons.each do |l| %>
+      <h1> <%= l.topic %> </h1>
+        <% l.concepts.each do |c| %>
+        <ul>
+        <li><%= c.bullet %> </li>
+        </ul>
+        <%end %>
+    <% end %>
+</body>
+</html>

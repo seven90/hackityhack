@@ -1,0 +1,9 @@
+= form_for @lesson do |f|
+
+  %h3 Concepts
+  #concepts
+    = f.fields_for :concepts do |concept|
+      = render 'concept_field', :f => concept
+    .links
+      = link_to_add_association 'add concept', f, :concepts
+  = f.submit

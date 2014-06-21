@@ -1,0 +1,7 @@
+.nested-fields
+  .field
+    = f.text_field :bullet
+  / .field
+  /   = f.check_box :done
+  /   = f.label :done
+  = link_to_remove_association "remove concept", f
