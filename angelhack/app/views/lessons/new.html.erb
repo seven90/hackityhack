@@ -8,6 +8,7 @@
     <%= f.label "topic" %><br>
     <%= f.text_field "topic" %>
   </p>
+  <%= f.hidden_field :teacher_id, value: current_teacher.id %>
   <p>
     <%= f.submit "Save" %>
   </p>
