@@ -6,6 +6,21 @@
       <div class="row center">
           <div class="input-group">
             <div class="input-group-btn">
+              <p class="userinfo">
+                  <% if current_student %>
+                  <%= link_to "Log out", student_sessions_path("current"), :method => :delete %>
+                 
+                    <h1> <p>Signed in as <%= current_student.first_name %></p>
+                    
+                    <p> <a href="/lessons">Show Lessons</a>
+                  <% elsif current_teacher %>
+                    <%= link_to "Log out", session_path("current"), :method => :delete %>
+     
+                      <h1> <p>Signed in as <%= current_teacher.first_name %></p>
+                      <p> <%= link_to 'Create Lesson', new_lesson_path %> </h1></p>
+                      <p> <a href="/lessons">Show Lessons</a>
+                    <% else %>
+
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span id="user-type-status">Student</span> <span class="caret"></span></button>
               <ul id="select-user-type" class="dropdown-menu">
                 <li><a href="#" data-action="/student">Student</a></li>
@@ -19,6 +34,7 @@
             <input type="text" class="form-control" placeholder="password">
             <span class="input-group-btn">
             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-right"></button>
+            <%end%>
             </span>
           </div>
       </div><!-- /.row -->
