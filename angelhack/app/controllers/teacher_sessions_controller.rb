@@ -22,4 +22,3 @@ class TeacherSessionsController < ApplicationController
   end
 end
 
-end

@@ -1,1 +1,23 @@
-<h1>Welcome!</h1>
+<h1>Log in</h1>
+
+  <p class="userinfo">
+      <% if current_student %>
+      <%= link_to "Log out", student_sessions_path("current"), :method => :delete %>
+     
+        <h1> <p>Signed in as <%= current_student.first_name %></p>
+        
+        <p> <a href="/lessons">Show Lessons</a>
+      <% else %>
+
+<%= form_tag student_sessions_path do %>
+  <div class="field">
+    <%= label_tag :email %><br/>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %><br/>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Log in" %></div>
+<% end %>
+<%end %>

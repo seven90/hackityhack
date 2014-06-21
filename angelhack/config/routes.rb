@@ -3,8 +3,12 @@ Rails.application.routes.draw do
   resources :concepts, :students, :teachers
   resources :student_sessions, :teacher_sessions
   resources :lessons, :except => [:show]
+  resources :teachers, :students, :only => [:new, :create]
+  resources :student_sessions, :only => [:new, :create, :destroy]
+  resources :teacher_sessions, :only => [:new, :create, :destroy]
 
   get '/lessons/:date', to: 'lessons#show'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
