@@ -1,5 +1,10 @@
 class ConceptsController < ApplicationController
-  def index
+  def new
+    @concept = Concept.new
   end
-  
+
+  private
+  def concept_params
+    params.require(:concept).permit(:bullet)
+  end
 end
