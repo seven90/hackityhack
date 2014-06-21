@@ -35,6 +35,7 @@ gem 'cocoon'
 
 gem 'haml'
 
+gem 'bootstrap-sass'
 # Use unicorn as the app server
 # gem 'unicorn'
 
