@@ -1,3 +1,3 @@
 class Concept < ActiveRecord::Base
-  belongs_to :Lesson
+  belongs_to :lesson
 end
