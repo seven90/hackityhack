@@ -4,11 +4,11 @@ class ConceptsController < ApplicationController
   end
 
   def index
-    @concepts = Concept.find(params[:id]).bullet
+    @concepts = Concept.find(params[:id])
   end
   
   def show
-    @concepts = Concept.find(params[:id])
+    @concepts = Concept.all
   end  
 
   private

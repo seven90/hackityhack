@@ -1,1 +1,4 @@
-<% @concepts.bullet %>
+<% @concepts.where(:lesson_id => params[:id]).map do |c| %>
+<a href=""><p><%= c.bullet %></p></a>
+<%end%>
+
