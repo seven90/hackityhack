@@ -4,7 +4,6 @@
 
 $(document).on("ready page:load", ->
   $("#select-user-type").on("click", "a", (event) ->
-    event.preventDefault()
     selection = $(@)
     $("#user-type-status").text(selection.text())
     $("#new-user-form").attr("action", selection.data("action"))

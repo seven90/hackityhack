@@ -1,27 +1,42 @@
+<div class="container">
+<div class="container-home">
+  <h1>Planr</h1>
+
 <p class="userinfo">
     <% if current_student %>
-    <h1><%= link_to "Log out", student_session_path("current"), :method => :delete %></h1>
+    <%= link_to "Log out", student_session_path("current"), :method => :delete %>
    
-      <h6> <p>Signed in as <%= current_student.first_name %></p></h6>
+      <h1> <p>Signed in as <%= current_student.first_name %></p>
+      
+      <p> 
 
-    <p> <a href = "/concepts/1" ><%= current_student.period_1 %></a> 
-        <a href = "/concepts/2" ><%= current_student.period_2 %></a>
-        <a href = "/concepts/3" ><%= current_student.period_3 %></a>
-        <a href = "/concepts/4" ><%= current_student.period_4 %></a>
-        <a href = "/concepts/5" ><%= current_student.period_5 %></a>
-        <%= puts current_student %>
+    <p><a href = "/concepts/<%= current_student.id %>" ><%= current_student.period_1 %></a> 
+<a href = "/concepts/show" ><%= current_student.period_2 %></a>
+<a href = "/concepts/show" ><%= current_student.period_3 %></a>
+<a href = "/concepts/show" ><%= current_student.period_4 %></a>
+<a href = "/concepts/show" ><%= current_student.period_5 %></a>
+ <%= puts current_student %>
+
     </p>
+    
+
+      <a href="/students/view">Show Lessons</a>
 
     <% else %>
 
-<%= form_tag student_sessions_path do %>
-  <div class="field">
-    <%= label_tag :email %><br/>
-    <%= text_field_tag :email, params[:email] %>
+<%= form_tag student_sessions_path, :class => "form-inline" do %>
+  <div class="input-group student">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">Student</button>
+      </span>
+    <%= text_field_tag :email, params[:email], class: "form-control teacher-padding", placeholder: "Username" %>
   </div>
-  <div class="field">
-    <%= label_tag :password %><br/>
-    <%= password_field_tag :password %>
+
+    <div class="input-group teacher-pw">
+    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+  <div class="input-group student" style="color: black;">
+    <%= password_field_tag :password, params[:password], placeholder: "Password", class: "form-control teacher-padding" %>
+  </div>
   </div>
   <div class="actions"><%= submit_tag "Log in" %></div>
 <% end %>

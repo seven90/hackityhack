@@ -9,10 +9,10 @@ end
 
 def create
   @teacher = Teacher.create(teacher_params)
-  if @teacher 
+  if @teacher.save
     redirect_to teachers_path, :notice => "Signed Up!"
   else 
-    render :new
+    render :new 
   end
 end
 

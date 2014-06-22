@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.create(student_params)
-    if @student
+    if @student.save
       redirect_to students_path, :notice => "Signed Up!"
     else 
       render :new
