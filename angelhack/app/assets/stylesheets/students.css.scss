@@ -42,48 +42,19 @@
     top: 6px;
 }
 
-.button-orange{
-    background-color: #FFA236;
-    -webkit-box-shadow: 0px 9px 0px #FFA236;
-    -moz-box-shadow: 0px 9px 0px #FFA236;
-    box-shadow: 0px 9px 0px #FFA236;
+.button-color{
+    background-color: #3193c3;
 }
 
-.button-purple{
-    background-color: #B852D5;
-    -webkit-box-shadow: 0px 9px 0px #B852D5;
-    -moz-box-shadow: 0px 9px 0px #B852D5;
-    box-shadow: 0px 9px 0px #B852D5;
+.button:hover {
+    background-color: #0E597D;
 }
 
-.button-yellow{
-    background-color: #7FED56;
-    -webkit-box-shadow: 0px 9px 0px #7FED56;
-    -moz-box-shadow: 0px 9px 0px #7FED56;
-    box-shadow: 0px 9px 0px #7FED56;
+.row-1 a, .row-2 a {
+    text-decoration: none;
+    padding-top: 50px;
+    vertical-align: center;
 }
-
-.button-blue{
-    background-color: #F5EB33;
-    -webkit-box-shadow: 0px 9px 0px #F5EB33;
-    -moz-box-shadow: 0px 9px 0px #F5EB33;
-    box-shadow: 0px 9px 0px #F5EB33;
-}
-
-.button-red{
-    background-color: #F85A73;
-    -webkit-box-shadow: 0px 9px 0px #F85A73;
-    -moz-box-shadow: 0px 9px 0px #F85A73;
-    box-shadow: 0px 9px 0px #F85A73;
-}
-
-.button-pinkish{
-    background-color: #FF9C6F;
-    -webkit-box-shadow: 0px 9px 0px #FF9C6F;
-    -moz-box-shadow: 0px 9px 0px #FF9C6F;
-    box-shadow: 0px 9px 0px #FF9C6F;
-}
-
 .column{
     width:50%;
     float:left;
@@ -96,3 +67,9 @@
 .row-2 {
     margin-left: -19px;
 }
+
+.course_lister {
+    margin-top: -15rem;
+    font-size: 15rem;
+}
+

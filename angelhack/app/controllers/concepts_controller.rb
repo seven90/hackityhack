@@ -9,12 +9,15 @@ class ConceptsController < ApplicationController
   
   def show
     @concepts = Concept.all
+    @lesson = Lesson.last
+    @vote = Vote.last
   end  
 
   def vote
       @concept = Concept.find_by(params[:id])
       @vote = Vote.create(concept_id: @concept.id)
-      redirect_to root_path
+      @votes = Vote.all
+      redirect_to concept_path(@concept)
   end
 
   private
