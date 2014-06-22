@@ -11,15 +11,15 @@
     </div>
     </div>
   <div class="periods">      
-    <div class="period-1to3"> 
-      <a href="/concepts/<%= current_student.id %>" class="button button-orange"><%= current_student.period_1 %></a>
-      <a href="/concepts/<%= current_student.id %>" class="button button-purple"><%= current_student.period_2 %></a>
-      <a href="/concepts/<%= current_student.id %>" class="button button-yellow"><%= current_student.period_3 %></a>
+    <div class="row-1 col-md-6">
+      <a href="/concepts/1" class="button button-orange"><%= current_student.period_1 %></a>
+      <a href="/concepts/2" class="button button-purple"><%= current_student.period_2 %></a>
+      <a href="/concepts/3" class="button button-yellow"><%= current_student.period_3 %></a>
     </div>
-    <div class="period-3to6"> 
-      <a href="/concepts/<%= current_student.id %>" class="button button-red"><%= current_student.period_4 %></a>
-      <a href="/concepts/<%= current_student.id %>" class="button button-blue"><%= current_student.period_5 %></a>
-      <a href="/concepts/<%= current_student.id %>" class="button button-purp"><%= current_student.afterschool %></a>
+    <div class="row-2 col-md-6"> 
+      <a href="/concepts/4" class="button button-red"><%= current_student.period_4 %></a>
+      <a href="/concepts/5" class="button button-blue"><%= current_student.period_5 %></a>
+      <a href="/concepts/6" class="button button-pinkish"><%= current_student.afterschool %></a>
     </div>
   </div>
   <!-- <%= puts current_student %> -->
