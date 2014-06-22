@@ -6,7 +6,20 @@
    
       <h1> <p>Signed in as <%= current_student.first_name %></p>
       
-      <p> <a href="/lessons">Show Lessons</a>
+      <p> 
+
+    <p><a href = "/concepts/show" ><%= current_student.period_1 %></a> 
+<a href = "/concepts/show" ><%= current_student.period_2 %></a>
+<a href = "/concepts/show" ><%= current_student.period_3 %></a>
+<a href = "/concepts/show" ><%= current_student.period_4 %></a>
+<a href = "/concepts/show" ><%= current_student.period_5 %></a>
+ <%= puts current_student %>
+
+    </p>
+    
+
+      <a href="/students/view">Show Lessons</a>
+
     <% else %>
 
 <%= form_tag student_sessions_path do %>

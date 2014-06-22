@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   def index
+    @student = :current_student
   end
 
   def new
@@ -16,6 +17,8 @@ class StudentsController < ApplicationController
   end
 
   
+  def show
+  end
 
   private
   def student_params

@@ -1,5 +1,6 @@
 class StudentSessionsController < ApplicationController
   def index
+       @student = Student.find(params[:id])
   end
   
   def new
@@ -20,5 +21,13 @@ class StudentSessionsController < ApplicationController
     session[:student_id] = nil
     redirect_to root_path :notice => "Logged out!"
   end
+
+  def show
+  end
+
+  def view
+
+  end
+
 end
 
