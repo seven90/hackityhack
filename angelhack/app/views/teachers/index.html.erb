@@ -4,14 +4,16 @@
 
 <p class="userinfo">
     <% if current_teacher %>
-    <%= link_to "Log out", teacher_session_path("current"), :method => :delete %>
-   
-      <h1> <p>Signed in as <%= current_teacher.first_name %></p>
-      
-      <p> <a href="/lessons/new">Create a Lesson</a>
+      <div class="signed-in">
+      <p class="display-login-teacher">Signed in as <%= current_teacher.first_name %></p>
+      <div class="log-out"><%= link_to "Log out", teacher_session_path("current"), class: "log-out-word", :method => :delete %></div>
+      </div>
+
+      <a href="/lessons/new"><div class="btn-group">
+      <button type="button" class="btn btn-danger btn-lg">Create a Lesson</button></a>
     <% else %>
 
-<%= form_tag teacher_sessions_path, :class => "form-inline" do %>
+<%= form_tag teacher_sessions_path, class: "form-inline" do %>
   <div class="input-group teacher">
     <span class="input-group-btn">
       <button class="btn btn-default" type="button">Teacher</button>

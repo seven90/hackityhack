@@ -1,15 +1,19 @@
-<h1>New Lesson</h1>
-<%= form_for @lesson do |f| %>
-  <p>
-    <%= f.label "date" %><br>
-    <%= f.date_field "date" %>
-  </p>
-  <p>
-    <%= f.label "topic" %><br>
-    <%= f.text_field "topic" %>
-  </p>
+<div class="container">
+<div class="container-home">
+<h2>Create</h2>
+<%= form_for @lesson, :class => "form-inline" do |f| %>
+<!--   <p> -->
+<!--     <%= f.label "date" %><br> -->
+    <%= f.date_field "date", class: "form-control", style: "color: #B0B0B0", id: "add_new_pad" %>
+  <!-- </p>
+  <p> -->
+<!--     <%= f.label "topic" %><br> -->
+    <%= f.text_field "topic", class: "form-control", placeholder: "Topic", id: "add_new_pad" %>
+ <!--  </p> -->
   <%= f.hidden_field :teacher_id, value: current_teacher %>
-  <p>
-    <%= f.submit "Save" %>
+<!--   <p> -->
+<!--     <%= f.submit "Save" %> -->
   </p>
 <% end %>
+</div>
+</div>
