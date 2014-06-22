@@ -8,9 +8,24 @@ Rails.application.routes.draw do
   resources :teacher_sessions, :only => [:new, :create, :destroy]
 
   get '/lessons/:date', to: 'lessons#show'
+
+  resources :sessions, :only => [:new, :create, :destroy]
   
 
   root to: "pages#index"
+
+  get 'teacher_sessions/new'
+
+  get 'teacher_sessions/create'
+
+  get 'teacher_sessions/destroy'
+
+  get 'student_sessions/new'
+
+  get 'student_sessions/create'
+
+  get 'student_sessions/destroy'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

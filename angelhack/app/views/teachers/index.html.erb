@@ -1,2 +1,23 @@
-  <h1>Create a Lesson Plan!</h1>
-  <a href="/lessons/new">Lessons</a>
+<h1>Log in</h1>
+
+<p class="userinfo">
+    <% if current_teacher %>
+    <%= link_to "Log out", teacher_session_path("current"), :method => :delete %>
+   
+      <h1> <p>Signed in as <%= current_teacher.first_name %></p>
+      
+      <p> <a href="/lessons">Show Lessons</a>
+    <% else %>
+
+<%= form_tag teacher_sessions_path do %>
+  <div class="field">
+    <%= label_tag :email %><br/>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %><br/>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Log in" %></div>
+<% end %>
+<%end %>
