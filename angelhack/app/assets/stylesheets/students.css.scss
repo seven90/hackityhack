@@ -13,3 +13,87 @@
 .student-pw {
   margin-left: 5px;
 }
+
+
+.button{
+    position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2.5em;
+    display: block;
+    padding: 4px;
+    margin: 100px auto;
+    min-width: 270px;
+    max-width: 35%;
+    text-align: center;
+    margin-bottom: -75px;
+  
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.button:active {
+    position: relative;
+    top: 6px;
+}
+
+.button-orange{
+    background-color: #FFA236;
+    -webkit-box-shadow: 0px 9px 0px #FFA236;
+    -moz-box-shadow: 0px 9px 0px #FFA236;
+    box-shadow: 0px 9px 0px #FFA236;
+}
+
+.button-purple{
+    background-color: #B852D5;
+    -webkit-box-shadow: 0px 9px 0px #B852D5;
+    -moz-box-shadow: 0px 9px 0px #B852D5;
+    box-shadow: 0px 9px 0px #B852D5;
+}
+
+.button-yellow{
+    background-color: #7FED56;
+    -webkit-box-shadow: 0px 9px 0px #7FED56;
+    -moz-box-shadow: 0px 9px 0px #7FED56;
+    box-shadow: 0px 9px 0px #7FED56;
+}
+
+.button-blue{
+    background-color: #D54DCF;
+    -webkit-box-shadow: 0px 9px 0px #D54DCF;
+    -moz-box-shadow: 0px 9px 0px #D54DCF;
+    box-shadow: 0px 9px 0px #D54DCF;
+}
+
+.button-red{
+    background-color: #F85A73;
+    -webkit-box-shadow: 0px 9px 0px #F85A73;
+    -moz-box-shadow: 0px 9px 0px #F85A73;
+    box-shadow: 0px 9px 0px #F85A73;
+}
+
+.button-purp{
+    background-color: #7D498C;
+    -webkit-box-shadow: 0px 9px 0px #7D498C;
+    -moz-box-shadow: 0px 9px 0px #7D498C;
+    box-shadow: 0px 9px 0px #7D498C;
+}
+
+.column{
+    width:50%;
+    float:left;
+}
+
+.period-1to3 {
+    float: left;
+    margin-left: 280px;
+}
+
+.period-3to6 {
+    float: right;
+    margin-right: 280px;
+}
