@@ -2,12 +2,96 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
 #add_new_pad {
   padding: 10px;
   width: 300px;
   display: inline-block;
 }
 
+
+
 h2 {
   font-size: 18rem;
+}
+
+.lesson_date {
+  color: white;  
+  font-size: 2.5rem;
+   margin-top: -2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.lesson_topic {
+ color: white; 
+ font-size: 6rem;
+ margin-bottom: 2rem;
+
+ text-align: center;
+}
+
+h3 {
+  color: white;
+
+}
+
+form {
+  text-align: center;
+}
+
+.entire {
+  margin: 20rem auto;
+  width: 100%;
+}
+
+#concepts {
+  border-bottom: 1px white;
+  border-right: 1px white;
+  background-color: transparent;
+}
+
+.each_field {
+  background-color: blue;
+}
+
+#lessons_concepts_bullet {
+  background-color: blue;
+}
+
+// span {
+//   color: white;
+//   background-color: blue;
+// }
+
+#concept_field {
+  color: white;
+  border: 0;
+  background-color: #3193c3;
+}
+
+.add {
+  color: white;
+  position: absolute;
+  margin-left: 310px;
+  margin-top: -33px;
+  font-size: 1.6rem;
+}
+
+.concept {
+  background-color: #3193c3;
+  border: 0px;
+  height: 35px;
+  border-bottom: solid 1px white;
+  border-right: solid 1px white;
+  margin-bottom: 5px;
+  min-width: 60rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.concept:focus {
+  box-shadow: 0;
+  border: 0;
 }
