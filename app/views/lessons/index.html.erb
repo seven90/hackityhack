@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lessons</title>
+</head>
+<body>
+  <% @lessons.each do |l| %>
+      <p><h4> <%= l.date %> </h4></p>
+      <p><h4> <%= l.topic %> </h4> </p>
+
+        <% l.concepts.each do |c| %>
+        <ul>
+        <li><%= c.bullet %> </li>
+        </ul>
+        <%end %>
+    <% end %>
+</body>
+</html>

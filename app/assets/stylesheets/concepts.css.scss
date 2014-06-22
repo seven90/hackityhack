@@ -1,0 +1,46 @@
+// Place all the styles related to the concepts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.topic-name {
+  font-size: 15rem;
+  margin-bottom: -30px;
+}
+
+.topic-date {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+#topic-container {
+  margin-top: 30px;
+}
+
+.concepts-write {
+  margin-right: 150px;
+  display: inline-block;
+}
+
+.concept-write p {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+
+
+.concept-write >  p:hover {
+  text-decoration: none;
+}
+
+.button-vote {
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 5rem;
+  margin-top: -4rem;
+}
+
+.counter {
+  color:white;
+  margin-top: -5rem;
+}

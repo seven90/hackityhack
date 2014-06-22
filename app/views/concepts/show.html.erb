@@ -1,0 +1,16 @@
+<div class="container">
+<div class="container-home" id="topic-container">
+<div class="topic-name"><%=@lesson.topic %></div>
+<div class="topic-date"><%=@lesson.date %></div>
+</div>
+</div>
+
+<% @concepts.where(:lesson_id => params[:id]).map do |c| %>
+<a href=""><div class="concept-write"><p><%= c.bullet %></p></div></a>
+<form action="/concepts/vote" method="post">
+<input type="submit" value="Vote" class="button-vote">
+
+<%end%>
+
+<div class="counter"><%= @vote.id %></div>
+</form>
