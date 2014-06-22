@@ -1,4 +1,7 @@
 <% @concepts.where(:lesson_id => params[:id]).map do |c| %>
 <a href=""><p><%= c.bullet %></p></a>
+<form action="/concepts/vote" method="post">
+  <input type="submit" value="Vote">
+</form>
 <%end%>
 

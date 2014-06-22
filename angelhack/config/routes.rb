@@ -6,12 +6,12 @@ Rails.application.routes.draw do
   resources :teachers, :students, :only => [:new, :create]
   resources :student_sessions, :only => [:new, :create, :destroy]
   resources :teacher_sessions, :only => [:new, :create, :destroy]
+  post '/concepts/vote', to: 'concepts#vote'
 
   get '/lessons/:date', to: 'lessons#show'
 
   resources :sessions, :only => [:new, :create, :destroy]
   
-
   root to: "pages#index"
 
   get 'teacher_sessions/new'
