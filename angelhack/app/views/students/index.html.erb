@@ -1,6 +1,6 @@
 <div class="container">
 <div class="container-home">
-  <h1>Planr</h1>
+ 
 
 <p class="userinfo">
     <% if current_student %>
@@ -23,7 +23,7 @@
       <a href="/students/view">Show Lessons</a>
 
     <% else %>
-
+ <h1>Planr</h1>
 <%= form_tag student_sessions_path, :class => "form-inline" do %>
   <div class="input-group student">
     <span class="input-group-btn">

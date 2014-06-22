@@ -8,7 +8,7 @@
    
       <h1> <p>Signed in as <%= current_teacher.first_name %></p>
       
-      <p> <a href="/lessons">Show Lessons</a>
+      <p> <a href="/lessons/new">Create a Lesson</a>
     <% else %>
 
 <%= form_tag teacher_sessions_path, :class => "form-inline" do %>

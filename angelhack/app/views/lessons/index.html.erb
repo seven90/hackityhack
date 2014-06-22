@@ -6,7 +6,9 @@
 </head>
 <body>
   <% @lessons.each do |l| %>
-      <h1> <%= l.topic %> </h1>
+      <p><h4> <%= l.date %> </h4></p>
+      <p><h4> <%= l.topic %> </h4> </p>
+
         <% l.concepts.each do |c| %>
         <ul>
         <li><%= c.bullet %> </li>
