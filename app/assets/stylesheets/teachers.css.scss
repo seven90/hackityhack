@@ -34,3 +34,40 @@
 .log-out-word:hover {
   text-decoration: none;
 }
+
+.teacher_date {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+
+.teacher_topic {
+  font-size: 15rem;
+  color: white;
+  text-align: center;
+}
+
+.lesson_plan {
+  clear:both;
+}
+
+.teacher_content{
+  clear: both;
+  margin: 0 auto;
+  width: 900px;
+  margin-left: 420px;
+}
+
+.teacher_vote_count {
+  color: white;
+  font-size: 7rem;
+  text-align: left;
+  margin-right: 15rem;
+  float: left;
+}
+
+.teacher_concept {
+  color: white;
+  font-size: 7rem;
+  float: left;
+}
