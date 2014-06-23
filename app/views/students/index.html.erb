@@ -1,8 +1,9 @@
 <div class="container">
 <div class="container-home">
-<header class="course_lister">Courses</header>
+
 <p class="userinfo">
     <% if current_student %>
+    <header class="course_lister">Courses</header>
     <div class="signed-in">
     <p>Signed in as <%= current_student.first_name %></p>
     <div class="log-out">

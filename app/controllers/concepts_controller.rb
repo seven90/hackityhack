@@ -4,20 +4,20 @@ class ConceptsController < ApplicationController
   end
 
   def index
-    @concepts = Concept.find(params[:id])
+    @concept = Concept.find(params[:id])
   end
   
   def show
+    @lesson = Lesson.find(params[:id])
     @concepts = Concept.all
-    @lesson = Lesson.last
-    @vote = Vote.last
+    @votes = Vote.all
   end  
 
   def vote
-      @concept = Concept.find_by(params[:id])
+      @concept = Concept.find(params[:id])
       @vote = Vote.create(concept_id: @concept.id)
       @votes = Vote.all
-      redirect_to concept_path(@concept)
+      redirect_to :back
   end
 
   private

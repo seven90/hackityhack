@@ -32,15 +32,43 @@
   text-decoration: none;
 }
 
+
+.button-vote:visited {
+  background-color: #c0392b;
+}
+
+
 .button-vote {
   border: none;
   background-color: transparent;
   color: white;
-  margin-bottom: 5rem;
-  margin-top: -4rem;
+  margin-top: 1rem;
+  font-size: 5rem;
+  width: 100%;
+  padding: 2rem;
 }
+
+input:visited {
+    color: #0E597D;
+
+}
+
+input:hover {
+    background-color: #0E597D;
+    color: #c0392b;
+}
+
+
+
+
 
 .counter {
   color:white;
   margin-top: -5rem;
+}
+
+.vote_count {
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
 }

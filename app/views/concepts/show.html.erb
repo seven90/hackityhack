@@ -6,11 +6,10 @@
 </div>
 
 <% @concepts.where(:lesson_id => params[:id]).map do |c| %>
-<a href=""><div class="concept-write"><p><%= c.bullet %></p></div></a>
-<form action="/concepts/vote" method="post">
-<input type="submit" value="Vote" class="button-vote">
+  <form action="/concepts/vote/<%= c.id %>" method="post">  
+  
+  <input type="submit" value="<%= c.bullet %>" class="button-vote">
+  </form>
 
 <%end%>
 
-<div class="counter"><%= @vote.id %></div>
-</form>

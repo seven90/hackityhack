@@ -1,6 +1,5 @@
 class StudentsController < ApplicationController
   def index
-    @student = :current_student
   end
 
   def new
