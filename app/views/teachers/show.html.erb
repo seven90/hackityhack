@@ -1,0 +1,13 @@
+<% @lessons.each do |l| %>
+<div class="lesson_plan">
+  <p><h4 class="teacher_topic"> <%= l.topic %> </h4> </p>
+  <p><h4 class="teacher_date"> <%= l.date %> </h4></p>
+
+  <% l.concepts.map do |c| %>
+  <div class="teacher_content"> 
+    <p class="teacher_vote_count"><%= @votes.where(:concept_id => c.id).count %></p>
+    <p class="teacher_concept"><%= c.bullet %></p>
+  </div>
+  <%end %>
+  </div>
+<% end %>
