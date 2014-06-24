@@ -9,9 +9,9 @@ class TeacherSessionsController < ApplicationController
     teacher = Teacher.find_by_email(params[:email])
     if teacher && teacher.authenticate(params[:password])
       session[:teacher_id] = teacher.id
-      redirect_to lessons_path, :notice => "Logged in!"
+      redirect_to new_lesson_path, :notice => "Logged in!"
     else
-      render "root_path" 
+      render "new" 
     end
       
   end
