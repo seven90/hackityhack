@@ -1,0 +1,12 @@
+<%= form_for @lesson do |f| %>
+  <div id="concepts">
+    <%= f.fields_for :concepts do |concept| %>
+      <%= render 'concept_fields', :f => concept %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association raw('<span class="add">add</span>'), f, :concepts %>
+    </div>
+  </div>
+<%= f.submit %>
+<% end %>
+

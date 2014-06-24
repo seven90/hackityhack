@@ -1,0 +1,75 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.actions {
+  opacity: 0;
+}
+
+.student-padding {
+  padding-left: 5px;
+}
+
+.student-pw {
+  margin-left: 5px;
+}
+
+
+.button{
+    position: relative;
+    margin-right: 50px;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2.5em;
+    display: block;
+    padding: 4px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+    height: 15rem;
+  
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.button:active {
+    position: relative;
+    top: 6px;
+}
+
+.button-color{
+    background-color: #3193c3;
+}
+
+.button:hover {
+    background-color: #0E597D;
+}
+
+.row-1 a, .row-2 a {
+    text-decoration: none;
+    padding-top: 50px;
+    vertical-align: center;
+}
+.column{
+    width:50%;
+    float:left;
+}
+
+.row-1 {
+    margin-right: -12px;
+}
+
+.row-2 {
+    margin-left: -19px;
+}
+
+.course_lister {
+    margin-top: -15rem;
+    font-size: 15rem;
+}
+
